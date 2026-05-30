@@ -114,7 +114,9 @@ DataCal was conceived during planning for the MOSAiC expedition (2019–2020) at
 
 ## Citation
 
-If you use DataCal in your research, please cite it using the `CITATION.cff` file in this repository. A Zenodo DOI will be added here upon registration.
+If you use DataCal in your research, please cite it using the `CITATION.cff` file in this repository.
+
+> Ajjan, A. (2026). DataCal — Research Data Volume Calculator (Calculation Core) (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.20465730
 
 ---
 
