@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "DataCal — Research Data Volume Calculator (Calculation Core)"
+version: 0.1.0
+type: software
+license: MIT
+date-released: "2026-05-30"
+abstract: >
+  DataCal calculates projected data volumes for scientific field campaigns
+  from instrument specifications and sampling schedules. It produces
+  funder-ready figures for Data Management Plans (DFG, Horizon Europe, NERC,
+  NSF, BMBF, ERC) and exports machine-actionable DMP JSON (RDA DMP Common
+  Standard v1.1). This repository contains the standalone Python calculation
+  core (Phase 1: Plan). Conceived from direct field experience during the
+  MOSAiC expedition at the Alfred Wegener Institute, Bremerhaven.
+message: >
+  If you use DataCal in your research, please cite it using the metadata
+  in this file.
+authors:
+  - given-names: Anu
+    family-names: Ajjan
+    affiliation: "I-Gate IT Solutions, Bremen, Germany"
+    orcid: "https://orcid.org/0009-0003-6020-1955"
+keywords:
+  - data management plan
+  - DMP
+  - maDMP
+  - FAIR data
+  - research data management
+  - field campaigns
+  - scientific instrumentation
+  - polar research
+  - storage planning
+  - bandwidth planning
+  - RDA DMP Common Standard
+url: "https://datacal.org"
+repository-code: "https://github.com/ajjanu/datacal"
+references:
+  - type: dataset
+    title: "MOSAiC Data Policy"
+    authors:
+      - given-names: Anu
+        family-names: Ajjan
+      - name: "et al."
+    doi: "10.5281/zenodo.4537178"
+    notes: >
+      DataCal was conceived during planning for the MOSAiC expedition.
+      The MOSAiC Data Policy co-authored by DataCal's developer is
+      referenced in Nature Scientific Data (2022),
+      DOI: 10.1038/s41597-022-01678-8.

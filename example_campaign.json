@@ -1,0 +1,64 @@
+{
+  "title": "Example drift campaign — 2 legs, 4 instruments",
+  "legs": [
+    { "id": "L1", "name": "Leg 1 (autumn freeze-up)", "duration_days": 90 },
+    { "id": "L2", "name": "Leg 2 (polar night)", "duration_days": 120 }
+  ],
+  "instruments": [
+    {
+      "id": "hdcam",
+      "name": "HD observation camera",
+      "group": "Atmosphere",
+      "model": "rate",
+      "data_rate_bytes_per_s": 25000000,
+      "duty_cycle": 0.5,
+      "compression_ratio": 4.0,
+      "transmit_fraction": 0.02
+    },
+    {
+      "id": "ctd",
+      "name": "CTD profiler",
+      "group": "Ocean",
+      "model": "sample",
+      "channels": 6,
+      "sampling_hz": 24,
+      "bit_depth": 24,
+      "duty_cycle": 0.03,
+      "overhead_factor": 1.4,
+      "transmit_fraction": 1.0
+    },
+    {
+      "id": "adcp",
+      "name": "ADCP current profiler",
+      "group": "Ocean",
+      "model": "sample",
+      "channels": 40,
+      "sampling_hz": 2,
+      "bit_depth": 32,
+      "duty_cycle": 1.0,
+      "transmit_fraction": 0.25
+    },
+    {
+      "id": "met",
+      "name": "Meteorological logger",
+      "group": "Atmosphere",
+      "model": "sample",
+      "channels": 12,
+      "sampling_hz": 1,
+      "bit_depth": 16,
+      "count": 3,
+      "duty_cycle": 1.0,
+      "transmit_fraction": 1.0
+    }
+  ],
+  "deployments": [
+    { "instrument_id": "hdcam", "leg_id": "L1" },
+    { "instrument_id": "hdcam", "leg_id": "L2", "duty_cycle": 0.2 },
+    { "instrument_id": "ctd", "leg_id": "L1" },
+    { "instrument_id": "ctd", "leg_id": "L2" },
+    { "instrument_id": "adcp", "leg_id": "L1" },
+    { "instrument_id": "adcp", "leg_id": "L2" },
+    { "instrument_id": "met", "leg_id": "L1" },
+    { "instrument_id": "met", "leg_id": "L2" }
+  ]
+}
